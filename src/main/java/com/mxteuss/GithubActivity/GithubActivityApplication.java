@@ -1,13 +1,13 @@
 package com.mxteuss.GithubActivity;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.mxteuss.GithubActivity.controller.GitHubController;
 
-@SpringBootApplication
+import java.io.IOException;
+
 public class GithubActivityApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GithubActivityApplication.class, args);
+	public static void main(String[] args) throws IOException, InterruptedException {
+		GitHubController gitHubController = new GitHubController("mxteuss");
 	}
 
 }
